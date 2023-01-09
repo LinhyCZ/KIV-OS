@@ -1,0 +1,46 @@
+# Co v prezentaci:
+# Startup sekvence - Nastartuju UART, GPIO, ...
+
+DIAGRAM! - Jak se to točí na tom jednom user space tasku, čeká to na interrupt od časovače, čte jestli je něco dostupnýho k čtení, atd...
+ - Bude třeba to čtení z UARTu dělat několikrát během toho výpočtu. Ten výpočet bude asi na několik kroků, tak prostě tam vždycky hodit kontrolu toho UARTu, pokud je tam stop, zastav to.. :D
+  - Výpočet nevypadá na víc kroků.. :( Jak udělat čtení z UARTu během výpočtu? Interrupt! Jak zabít výpočet? Netuším :)
+
+A,B,C,D,E - parametry - konstanty v kódu?
+
+### Co bude třeba využít:
+### Scheduler - Použijeme system task - init_task pro uspávání procesoru
+### Správa paměti - Naalokování dynamické paměti pro ukládání dat.
+
+Co bude třeba doimplementovat:
+Userspace task 
+UART receive - už bylo na cvikách.
+Interrupt z UARTu? Kouknout jestli to tak chci, nebo jestli už to nemáme.
+Doplnění standardních funkcí - atoi, itoa, atd.. Třeba už máme? (Atoi a itoa tam je), nemáme nějaký atof, ftoa
+#Zabití procesu při stopu
+
+Co nepotřebujeme:
+Task scheduler? Možná má nějaký vychytávky, co se hodí, zkontrolovat, možná ho tam nechám a využiju nějaký to jeho přepínání z plnýho přístupu do userspace, ...
+
+Poděkovat za pozornost:)
+
+
+
+
+
+TODO Pátek ráno:
+Upravit tak, že read z UARTu bude blokující - na UART naimplementovat wait podobně jako je na GPIO, využívat interrupty pro UART, ty tam jsou. Wait se bude volat nad tím filem. 
+Je třeba nějak ošetřit, že pokud mi už na UARTu něco čeká, nebudu čekat a hned skočím dál.
+
+
+
+
+
+
+--------------------------------
+Práce 
+--------------------------------
+SWI: První dva bity určují službu, která má něco dělat, zbylých šest bitů určuje co má ta služba udělat.
+Všechny SWI se teď volají ze stdfile, ale to asi není třeba dělat - můžu si vytvořit vlastní třídu
+SWI propadne do interrupt_controller.cpp, funkce _internal_software_interrupt_handler(), návrat se dává do TSWI_Result (jsou tam registry r0 a r1, který pak přes assembly můžu nasypat do proměnný, kterou vrátím, viz třeba open)
+ - Můžu to udělat přes odkaz na paměť v r1 - viz třeba read - ten nasype data na tu adresu v r1 a v r0 nejdřív přečte adresu co číst a vrátí v tom počet přečtených bajtů (asi)
+

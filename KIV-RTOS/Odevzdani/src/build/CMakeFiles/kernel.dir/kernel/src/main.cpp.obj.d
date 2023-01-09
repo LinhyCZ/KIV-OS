@@ -1,0 +1,22 @@
+CMakeFiles/kernel.dir/kernel/src/main.cpp.obj: \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/src/main.cpp \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/drivers/gpio.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/board/rpi0/hal/intdef.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/board/rpi0/hal/peripherals.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/fs/filesystem.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/process/swi.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/process/spinlock.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/drivers/uart.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/drivers/bcm_aux.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/drivers/bridges/uart_defs.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/stdutils/include/circular_buffer.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/drivers/timer.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/drivers/oled_ssd1306.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/drivers/i2c.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/interrupt_controller.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/memory/memmap.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/memory/kernel_heap.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/process/process_manager.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/include/process/process.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/stdlib/include/stdstring.h \
+ /mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/stdlib/include/stdfile.h

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/src/interrupts.s
+
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/src/memory/mmu.s
+
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/src/process/spinlock.s
+
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/src/process/switch.s
+
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/kernel/src/start.s
+

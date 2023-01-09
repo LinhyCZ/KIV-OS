@@ -1,0 +1,4 @@
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/build/CMakeFiles/edit_cache.dir
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/build/CMakeFiles/kernel.dir
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/Odevzdani/src/build/CMakeFiles/kivrtos_stdlib.dir

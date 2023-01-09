@@ -1,0 +1,16 @@
+Nevím jak s userspace taskem - dole
+Jak v GDB 
+QEMU mi posílá jen CR a ne LF - nevím jestli není problém se čtením?
+Dělám správně Alloc?
+
+
+init - Nageneruji náhodné hodnoty.
+Genetický algoritmus - Udržují pool parametrů (ABCDE) - je to vektor = jeden prvek populace, má fitness funkci - Odchýlení od reálného výsledku
+ - Můžeme zvolit určitý počet prvků populace.
+ - Funguje ve for cyklu - gnerace < max_generace, prováděj
+  - crosover() - Třízení - Vezme dva prvky (třeba jeden horší a jeden lepší) a prohodím jim data
+  - mutace(); - Úprava dat - Náhodná změna - Náhodný prvek přegeneruji
+  - Fitness(); - Vybrání nejlepších prvků populace do další generace - Fitnes - nasčítáme rozdíly a udělám průměr ( = průměrná odchylka)
+ - Zastavím když fitness funkce je 0, nebo dojedu na max generace.
+
+ - Při dalším kroku využívám už předchozí generace - Jen ji vylepšuji

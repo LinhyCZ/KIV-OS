@@ -1,0 +1,30 @@
+UART - Udělat nějaký zpracování samostatně do interního bufferu - Read pak bude sahat už jen do toho interního bufferu - Udělat pomocí kruhovýho bufferu.
+ - Po IRQ vypíše do kruhovýho bufferu (128 znaků), pak až signalizovat proces - v UARTu je pouze 8 bajtů a když tam dám víc, tak se to smaže.
+  - Read sahá do kruhovýho bufferu. Měl by tam být spinlock - Nemůže vybírat a vkládat najednou - co když se potkají?
+   - Kruhový buffer má fixní velikost, nemusíme řešit alokaci, prostě pak přeteču n azačátek a přepisuju starý data. Omezení - konstantní kapacita.
+
+Konstanty zvolit jak nám vyhovuje - Potřebujeme přeurčit soustavu, stačí pět hodnot, když máme 4 parametry. 
+ - Musí to být ale konfigurovatelný, skrz nějakou konstsantu. 
+
+Nemusí být metoda nejmenších čtverců, ale může být genetický algoritmus, nebo stochastickou metodou. Bleh.
+
+UserHeap - To asi nemáme implementovaný?
+ - Stačí primitivní alokátor - zavolat setbrake? na začátku a dostat naalokovanou paměť
+  - Jádro naalokuje v uživatelským prostoru jeden kus paměti o který si proces řekne a vrátí pointer na začátek.
+
+ReadLine - Nemělo by to být v jádru. Měli bychom mít jen read. ReadLine by měl být v std knihovně.
+
+swi.h + handle_swi - Udělat pro alokaci paměti pro uživatelský proces. 
+
+Kompilátor - nejde dělení a modulo - musí se emulovat částí standardní knihovny - do linker flags jde přidat -lgcc  cmake: TARGET_LINK_LIBRARIES kernel gcc
+ - Mělo by být připraveno v KIV-RTOS
+
+FS - Dobrý nápad používat :)
+
+Pro IRQ z UARTu musí být zapnutý UART_INT(57) i AUX_INT(29)
+
+Nejde to bez přerušení - Když se tam dá moc znaků na UART, tak je nemusím stihnout přečíst
+
+STOP - checkpointy při výpočtu
+
+RIPPPppPpppPpp

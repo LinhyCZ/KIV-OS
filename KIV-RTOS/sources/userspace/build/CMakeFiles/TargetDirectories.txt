@@ -1,0 +1,4 @@
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/sources/userspace/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/sources/userspace/build/CMakeFiles/edit_cache.dir
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/sources/userspace/build/CMakeFiles/semestral_task.dir
+/mnt/c/user/privateWorkspace/School/OS/SP/KIV-RTOS/sources/userspace/build/CMakeFiles/init_task.dir
